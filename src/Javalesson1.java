@@ -1,4 +1,4 @@
-public class Main {
+public class Javalesson1 {
     public static void main(String[] args) {
         // Chapter 1
         int c;
