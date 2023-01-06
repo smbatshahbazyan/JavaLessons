@@ -12,4 +12,3 @@ public class Triangle {
         } else System.out.println("It isn't possible to get a triangle with the entered values");
     }
 }
-z
