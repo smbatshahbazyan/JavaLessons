@@ -16,7 +16,5 @@ public class Javalesson1 {
         System.out.println(x / 100);
         System.out.println(x % 100 / 10);
         System.out.println(x % 100 % 10);
-
-
     }
 }
