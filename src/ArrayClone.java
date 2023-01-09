@@ -34,3 +34,4 @@ public class ArrayClone {
         System.out.println("Output -{" + (int) secondArray[0] + "," + (int) secondArray[1] + "," + (int) secondArray[2] + "," + (int) secondArray[3] + "," + (int) secondArray[4] + "}");
     }
 }
+1
