@@ -1,40 +1,36 @@
 public class ArrayClone {
     public static void main(String[] args) {
-        double index0 = -9;
-        double index1 = 12;
-        double index2 = 5;
-        double index3 = -6;
-        double index4 = 16;
+        double index0 = -1;
+        double index1 = -4;
+        double index2 = 7;
+        double index3 = -2;
+        double index4 = 9;
         double[] firstArray = {index0, index1, index2, index3, index4};
         double[] secondArray = new double[5];
-        if (index0 > 0) {
-            secondArray[0] = firstArray[0];
+        int indexNumber = 0;
+        if (firstArray[0] > 0) {
+            secondArray[indexNumber] = firstArray[0];
+            indexNumber++;
         }
-        if (index1 > 0) {
-            secondArray[1] = firstArray[1];
+        if (firstArray[1] > 0) {
+            secondArray[indexNumber] = firstArray[1];
+            indexNumber++;
         }
-        if (index2 > 0) {
-            secondArray[2] = firstArray[2];
+        if (firstArray[2] > 0) {
+            secondArray[indexNumber] = firstArray[2];
+            indexNumber++;
         }
-        if (index3 > 0) {
-            secondArray[3] = firstArray[3];
+        if (firstArray[3] > 0) {
+            secondArray[indexNumber] = firstArray[3];
+            indexNumber++;
         }
-        if (index4 > 0) {
-            secondArray[4] = firstArray[4];
+        if (firstArray[4] > 0) {
+            secondArray[indexNumber] = firstArray[4];
+            indexNumber++;
         }
         //Printing first Array
-        System.out.println("Input numbers for first array");
-        System.out.println((int) (firstArray[0]));
-        System.out.println((int) (firstArray[1]));
-        System.out.println((int) (firstArray[2]));
-        System.out.println((int) (firstArray[3]));
-        System.out.println((int) (firstArray[4]));
+        System.out.println("Input - {" + (int) firstArray[0] + "," + (int) firstArray[1] + "," + (int) firstArray[2] + "," + (int) firstArray[3] + "," + (int) firstArray[4] + "}");
         //Printing second Array
-        System.out.println("Output numbers for second array");
-        System.out.println((int) (secondArray[0]));
-        System.out.println((int) (secondArray[1]));
-        System.out.println((int) (secondArray[2]));
-        System.out.println((int) (secondArray[3]));
-        System.out.println((int) (secondArray[4]));
+        System.out.println("Output -{" + (int) secondArray[0] + "," + (int) secondArray[1] + "," + (int) secondArray[2] + "," + (int) secondArray[3] + "," + (int) secondArray[4] + "}");
     }
 }
