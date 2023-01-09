@@ -8,23 +8,23 @@ public class ArrayClone {
         double[] firstArray = {index0, index1, index2, index3, index4};
         double[] secondArray = new double[5];
         int indexNumber = 0;
-        if (firstArray[0] > 0) {
+        if (firstArray[0] >= 0) {
             secondArray[indexNumber] = firstArray[0];
             indexNumber++;
         }
-        if (firstArray[1] > 0) {
+        if (firstArray[1] >= 0) {
             secondArray[indexNumber] = firstArray[1];
             indexNumber++;
         }
-        if (firstArray[2] > 0) {
+        if (firstArray[2] >= 0) {
             secondArray[indexNumber] = firstArray[2];
             indexNumber++;
         }
-        if (firstArray[3] > 0) {
+        if (firstArray[3] >= 0) {
             secondArray[indexNumber] = firstArray[3];
             indexNumber++;
         }
-        if (firstArray[4] > 0) {
+        if (firstArray[4] >= 0) {
             secondArray[indexNumber] = firstArray[4];
             indexNumber++;
         }
