@@ -7,6 +7,6 @@ public class LargerThanPrevious {
                 counter++;
             }
         }
-        System.out.println(counter);
+        System.out.println("Quantity of numbers that are bigger than previous one equal to " + counter);
     }
 }
