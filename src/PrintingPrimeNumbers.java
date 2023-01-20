@@ -1,24 +1,22 @@
 public class PrintingPrimeNumbers {
     public static void main(String[] args) {
-        int[] arr = {8,9, 49, 9, 9, 6, 9};
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 997, 409, 888, 444, 1, 3, 1};
         int counter = 0;
-        boolean isPrime = true;
+        int counter1 = 0;
         System.out.println("Prime numbers for mentioned array");
-        for (int j = 0; j < arr.length; j++) {
-            for (int i = 2; i < arr[j] / 2; i++) {
-                if (arr[j] % i == 0) {
-                    isPrime = false;
+        for (int i = 0; i < arr.length; i++, counter = 0) {
+            for (int j = 1; j <= arr[i]; j++) {
+                if (arr[i] % j == 0) {
                     counter++;
-                    break;
                 }
-                isPrime = true;
             }
-            if (isPrime) {
-                System.out.println(arr[j]);
+            if (counter == 2) {
+                System.out.print(arr[i] + ",");
+                counter1++;
             }
         }
-        if (counter == arr.length) {
-            System.out.println("There is no Prime number");
+        if (counter1 == 0) {
+            System.out.println("\nThere is no Prime number");
         }
     }
 }
