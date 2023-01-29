@@ -29,17 +29,21 @@ public class MethodPowerOfNumber {
         } else if (num1 > 10 || num2 < -10 || num2 > 10) {
             counter = -1;
         } else {
-            if (num2 > 0) {
-                for (int i = 1; i <= num2; i++) {
-                    counter *= num1;
-                }
-            } else if (num2 < 0) {
-                for (int i = 1; i <= -1 * num2; i++) {
-                    counter *= num1;
-                }
-                counter = 1 / counter;
+            for (int i = 1; i <= checkModule(num2); i++) {
+                counter *= num1;
             }
         }
-        return counter;
+        if ((counter == -2) || (counter == -1)) {
+            return counter;
+        } else {
+            return num2 < 0 ? 1 / counter : counter;
+        }
+    }
+
+    public static int checkModule(int number) {
+        if (number < 0) {
+            number *= -1;
+        }
+        return number;
     }
 }
