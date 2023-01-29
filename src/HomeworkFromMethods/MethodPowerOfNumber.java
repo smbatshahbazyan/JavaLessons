@@ -26,18 +26,16 @@ public class MethodPowerOfNumber {
         double counter = 1;
         if (num1 <= 0) {
             counter = -2;
+            return counter;
         } else if (num1 > 10 || num2 < -10 || num2 > 10) {
             counter = -1;
+            return counter;
         } else {
             for (int i = 1; i <= checkModule(num2); i++) {
                 counter *= num1;
             }
         }
-        if ((counter == -2) || (counter == -1)) {
-            return counter;
-        } else {
-            return num2 < 0 ? 1 / counter : counter;
-        }
+        return num2 < 0 ? 1 / counter : counter;
     }
 
     public static int checkModule(int number) {
