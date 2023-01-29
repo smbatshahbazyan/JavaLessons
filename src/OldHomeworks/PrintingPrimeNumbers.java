@@ -1,3 +1,5 @@
+package OldHomeworks;
+
 public class PrintingPrimeNumbers {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 997, 409, 888, 444, 1, 3, 1};

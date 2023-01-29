@@ -1,3 +1,5 @@
+package OldHomeworks;
+
 public class ArrayWithMixedNumbers {
     public static void main(String[] args) {
         int[] arr1 = {7, -9, 8, -1, -12, 0, -79, 6};

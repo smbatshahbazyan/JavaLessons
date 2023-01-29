@@ -1,3 +1,5 @@
+package OldHomeworks;
+
 public class Javalesson1 {
     public static void main(String[] args) {
         // Chapter 1

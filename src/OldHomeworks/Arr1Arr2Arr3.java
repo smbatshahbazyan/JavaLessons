@@ -1,3 +1,5 @@
+package OldHomeworks;
+
 public class Arr1Arr2Arr3 {
     public static void main(String[] args) {
         int[] arr1 = {7, 6, 4, 8, 7, 2, 0, 0};

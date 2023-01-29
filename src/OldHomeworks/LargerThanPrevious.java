@@ -1,3 +1,5 @@
+package OldHomeworks;
+
 public class LargerThanPrevious {
     public static void main(String[] args) {
         int[] arr1 = {4, 9, 8, 7, 2, 6, 8, 4, 5, 2, 3};
