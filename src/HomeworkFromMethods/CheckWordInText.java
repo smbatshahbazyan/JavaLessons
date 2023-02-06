@@ -6,12 +6,12 @@ public class CheckWordInText {
         String word = "and";
         System.out.println(text);
         System.out.println("Here is random text, Let's check how many time word 'and' repeats in text");
-        printResult(result(text, word));
+        printResult(checkWord(text, word));
         System.out.println("Let's check how many time word 'string' repeats in text");
-        printResult(checkString(text));
+        printResult(checkWord(text));
     }
 
-    public static int result(String text, String word) {
+    public static int checkWord(String text, String word) {
         int counter = 0;
         String[] b = text.split(" ");
         for (String s : b) {
@@ -29,7 +29,7 @@ public class CheckWordInText {
         }
     }
 
-    public static int checkString(String text) {
+    public static int checkWord(String text) {
         int counter = 0;
         String word = "string";
         String[] b = text.split(" ");
