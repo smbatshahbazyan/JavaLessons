@@ -1,16 +1,25 @@
 package HomewrokFromClasses;
 
 class City {
-    String name = "Not defined";
+    String name;
     String country;
     int population;
     int transportPrice;
 
     City(String st1, int num, int num1) {
+        name = "Not defined";
         country = st1;
         population = num;
         transportPrice = num1;
     }
+
+    City(String st, String st1, int num, int num1) {
+        name = st;
+        country = st1;
+        population = num;
+        transportPrice = num1;
+    }
+
 }
 
 public class CityHomework {
