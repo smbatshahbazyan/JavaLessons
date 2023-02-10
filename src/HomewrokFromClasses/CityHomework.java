@@ -1,13 +1,12 @@
 package HomewrokFromClasses;
 
 class City {
-    String name;
+    String name = "Not defined";
     String country;
     int population;
     int transportPrice;
 
     City(String st1, int num, int num1) {
-        name = "Not defined";
         country = st1;
         population = num;
         transportPrice = num1;
@@ -19,7 +18,6 @@ class City {
         population = num;
         transportPrice = num1;
     }
-
 }
 
 public class CityHomework {
