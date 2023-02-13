@@ -7,14 +7,15 @@ public class CharArrayToIntArray {
         for (int i = 0; i < charArr.length; i++) {
             System.out.print(charArr[i] + " ,");
         }
-        System.out.print("\nAscii code for this char element is ` ");
-        for (int i = 0; i < getAsciiCode(charArr).length; i++) {
-            System.out.print(getAsciiCode(charArr)[i] + ",");
-        }
-        System.out.print("\nSymbols for this Ascii code is ` ");
         int[] intArr = getAsciiCode(charArr);
-        for (int i = 0; i < reverseAsciiCode(intArr).length; i++) {
-            System.out.print(reverseAsciiCode(intArr)[i] + " ,");
+        System.out.print("\nAscii code for this char element is ` ");
+        for (int i = 0; i < intArr.length; i++) {
+            System.out.print(intArr[i] + ",");
+        }
+        char[] charArr1 = reverseAsciiCode(intArr);
+        System.out.print("\nSymbols for this Ascii code is ` ");
+        for (int i = 0; i < charArr.length; i++) {
+            System.out.print(charArr[i] + " ,");
         }
     }
 
