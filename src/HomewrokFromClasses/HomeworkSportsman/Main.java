@@ -2,16 +2,19 @@ package HomewrokFromClasses.HomeworkSportsman;
 
 public class Main {
     public static void main(String[] args) {
-        Sportsman sportsman1 = new Sportsman(50, 80, 50);
-        Sportsman sportsman2 = new Sportsman(70, 80);
-        Sportsman sportsman3 = new Sportsman(90, 80, 50, 70, 80);
-        Sportsman sportsman4 = new Sportsman(50, 90, 60, 80);
-        Sportsman sportsman5 = new Sportsman(60, 90, 70, 50, 80, 90);
-//Printing average of concurs result for each sportsman
-        System.out.println(sportsman1.concursResultAverage);
-        System.out.println(sportsman2.concursResultAverage);
-        System.out.println(sportsman3.concursResultAverage);
-        System.out.println(sportsman4.concursResultAverage);
-        System.out.println(sportsman5.concursResultAverage);
+        int objectNumber = 1;
+        Sportsman sportsman1 = new Sportsman(50, 60, 70, 80);
+        Sportsman sportsman2 = new Sportsman(60, 70, 90, 80);
+        Sportsman sportsman3 = new Sportsman(100, 55, 99, 60);
+        Sportsman sportsman4 = new Sportsman(100, 55, 99, 90);
+        Sportsman[] arr = {sportsman1, sportsman2, sportsman3, sportsman4};
+        for(int i = 0; i < arr.length;i++) {
+        System.out.println("Score average for sportsman" + objectNumber + " is " + arr[i].scoreAverage());
+        objectNumber++;
+        }
+//        Comparison for sportsman1 and sportsman2
+        sportsman1.comparisonSportsman(sportsman1.scoreAverage(),sportsman2.scoreAverage());
     }
 }
+
+
