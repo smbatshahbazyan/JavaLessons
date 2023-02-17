@@ -13,7 +13,6 @@ class Building {
         setBuildingType(buildingType);
     }
 
-
     public int getBuildingFloorQuantity() {
         return buildingFloorQuantity;
     }
@@ -49,5 +48,9 @@ class Building {
 
     public void setBuildingType(String buildingType) {
         this.buildingType = buildingType;
+    }
+
+    public int getApartmentQuantity(Building b) {
+        return (b.apartmentWithThreeRoom.length + b.apartmentWithTwoRoom.length) * b.buildingFloorQuantity;
     }
 }

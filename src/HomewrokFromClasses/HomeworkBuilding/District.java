@@ -3,7 +3,8 @@ package HomewrokFromClasses.HomeworkBuilding;
 class District {
     private Building[] buildings;
     private int gardenArea;
-    public District(int gardenArea,Building...buildings) {
+
+    public District(int gardenArea, Building... buildings) {
         setGardenArea(gardenArea);
         setBuildings(buildings);
     }
@@ -24,8 +25,16 @@ class District {
         this.gardenArea = gardenArea;
     }
 
-    public int gardenAreaForApartment(int a, int b, int c, int d){
-        return d/(a+b+c);
+    public int allApartment(Building... buildings) {
+        int counterAllApartment = 0;
+        for (int i = 0; i < buildings.length; i++) {
+            counterAllApartment += buildings[i].getApartmentQuantity(buildings[i]);
+        }
+        return counterAllApartment;
+    }
+
+    public int gardenAreaForEachApartment(int area, int allApartments) {
+        return area / allApartments;
     }
 }
 
