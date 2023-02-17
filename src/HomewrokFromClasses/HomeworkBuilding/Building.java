@@ -6,6 +6,14 @@ class Building {
     private int[] apartmentWithThreeRoom;
     private String buildingType;
 
+    Building(int buildingFloorQuantity, int[] apartmentWithTwoRoom, int[] apartmentWithThreeRoom, String buildingTypetype) {
+        setBuildingFloorQuantity(buildingFloorQuantity);
+        setApartmentWithTwoRoom(apartmentWithTwoRoom);
+        setApartmentWithThreeRoom(apartmentWithThreeRoom);
+        setBuildingType(buildingType);
+    }
+
+
     public int getBuildingFloorQuantity() {
         return buildingFloorQuantity;
     }
@@ -31,7 +39,12 @@ class Building {
     }
 
     public String getBuildingType() {
-        return buildingType;
+        if (buildingType.equals("panel") || buildingType.equals("monolithic")) {
+            return buildingType;
+        } else {
+            System.exit(0);
+            return null;
+        }
     }
 
     public void setBuildingType(String buildingType) {
