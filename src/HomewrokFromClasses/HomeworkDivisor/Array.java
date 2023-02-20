@@ -23,7 +23,7 @@ public class Array {
 
     public int commonDivisor() {
         int divisor = 1;
-        for (int i = 2; i <= arrayMinNumber(arr); i++) {
+        for (int i = 2; i <= arrayMinNumber(); i++) {
             boolean isDividingWithoutRemainder = false;
             for (int j = 0; j < arr.length; j++) {
                 if (arr[j] % i != 0) {
@@ -36,11 +36,11 @@ public class Array {
         return divisor;
     }
 
-    int arrayMinNumber(int[] array) {
-        int minNumber = array[0];
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] < minNumber) {
-                minNumber = array[i];
+    int arrayMinNumber() {
+        int minNumber = this.arr[0];
+        for (int i = 0; i < this.arr.length; i++) {
+            if (this.arr[i] < minNumber) {
+                minNumber = this.arr[i];
             }
         }
         return minNumber;
