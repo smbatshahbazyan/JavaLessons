@@ -17,6 +17,10 @@ public class Array {
                 System.out.println("There can't be zero in this array");
                 System.exit(1);
             }
+            if (arr[i] < 0) {
+                System.out.println("There can't be negative number in this array");
+                System.exit(1);
+            }
         }
         this.arr = arr;
     }
